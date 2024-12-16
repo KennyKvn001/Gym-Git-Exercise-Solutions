@@ -11,4 +11,10 @@ cd Gym-Git-Exercise-Solutions
 
 echo "#Gym-Git-Exercise-Solutions" > README.md
 
+git add .
+
+git commit -m "message"
+
+git push
+
 ```
