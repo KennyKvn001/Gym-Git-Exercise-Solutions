@@ -45,31 +45,31 @@
 
     ```
 
-    - ### Exercise2
+- ### Exercise2
 
-    ```
-    code
+  ```
+  code
 
-    # creating a new home.html file and stash it
-    git add .
-    git stash
+  # creating a new home.html file and stash it
+  git add .
+  git stash
 
-    #repeat the same thing for about and team files
-    git add .
-    git stash
+  #repeat the same thing for about and team files
+  git add .
+  git stash
 
-    # restoring the about file
-    git stash pop 1    # 1 was the index of about file in stash list
+  # restoring the about file
+  git stash pop 1    # 1 was the index of about file in stash list
 
-    # restoring the home file
-    git stash pop 1    # 1 was the index of home file in stash list after popping the about file
+  # restoring the home file
+  git stash pop 1    # 1 was the index of home file in stash list after popping the about file
 
-    # saving changes and push them
-    git add .
-    git push
+  # saving changes and push them
+  git add .
+  git push
 
-    # restoring team file and reset current changes
-    git stash pop
-    git reset --hard HEAD
+  # restoring team file and reset current changes
+  git stash pop
+  git reset --hard HEAD
 
-    ```
+  ```
