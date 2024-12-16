@@ -1,6 +1,6 @@
 # Gym-Git-Exercise-Solutions
 
-##
+## Exercise one
 
 ### Creating a repo
 
