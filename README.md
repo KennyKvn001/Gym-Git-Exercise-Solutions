@@ -66,10 +66,57 @@
 
   # saving changes and push them
   git add .
+  git commit -m "message"
   git push
 
   # restoring team file and reset current changes
   git stash pop
   git reset --hard HEAD
+
+  ```
+
+## Bundle 2:
+
+- ### Exercise 1:
+
+  ```
+  code
+
+  # creating new branch ft/bundle-2
+  git checkout -b ft/bundle-2
+
+  # adding changes to service file and push it
+  git add .
+  git commit -m "message"
+  git push
+
+  ```
+
+- ### Exircise 2:
+
+  ```
+  code
+
+  # chectout to main and pulling the latest changes
+  git checkout main
+  git pull origin ft/bundle-2
+
+  # creating new branch ft/service-redesign
+  git git checkout -b ft/service-redesign
+
+  # adding new changes to service file and push the changes
+  git add .
+  git commit -m "message"
+  git push
+
+  # going back to main branch and adding changes to service and push them
+  git checkout main
+  git add .
+  git commit -m "message"
+  git push
+
+  # Comparing main and ft/service-redesign and merge them
+  git diff main
+  git merge main
 
   ```
