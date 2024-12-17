@@ -120,3 +120,72 @@
   git merge main
 
   ```
+
+## Bundle 3:
+
+- ### Exercise 1:
+
+  ```
+  code
+
+  # creating new branch team-page
+  git checkout -b ft/team-page
+
+  # creating new team html file add some changes and push them
+  git add .
+  git commit -m "message"
+  git push
+
+  # creating new PR on github
+  # go back to main branch and create new branch contact page
+  git checkout main
+  git branch ft/contact-page
+
+  # go back to team-page branch and see last commit using git log and copy its hash
+  git log
+
+  # checkout to contact-page and use cherry-pick to get the changes from the last commit of ft/team-page
+  git cherry-pick <commit hash>
+  git add .
+  git push
+
+  # create new PR on github
+  # From the ft/contact-page branch create a new branch called ft/faq-page
+  git branch ft/faq-page
+
+  # create new file faq.html and push changes
+  git add .
+  git commit -m "message"
+  git push
+
+  # revert changes using git revert and push changes
+  git revert <desired commit hash>
+  git push
+
+
+  ```
+
+- ### Exercise 2:
+
+  ```
+  code
+
+  # create new branch ft/home-page-redesign
+  git checkout -b home-page-redesign
+
+  # go back  to main and make some changes, commit and push changes
+  git checkout main
+  git add .
+  git commit -m "messsage"
+  git push
+
+  # go back to ft/home-page-redesign and rebase the branch to main
+  git checkout ft/home-page-redesign
+  git rebase main
+  git add .
+  git push
+
+  # then create PR on github
+
+
+  ```
