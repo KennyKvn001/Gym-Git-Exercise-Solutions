@@ -189,3 +189,64 @@
 
 
   ```
+
+## Bundle 4:
+
+- ### Exercise 1:
+
+  ```
+  code
+
+  # Checkout the main branch
+  git checkout main
+
+  # Create a new repository on Github
+
+  # Using git remote, add the repo to your project as a second remote named git-copy
+  git remote add git-copy <new-repo-url>
+
+  # Make new changes on the home page
+  # Save and commit the changes
+  git add .
+  git commit -m "message"
+
+  # Push the changes to both remotes: origin and git-copy
+  git push origin main && git push git-copy main
+
+  ```
+
+- ### Exercise 2:
+
+  ```
+  code
+
+  # Checkout a new branch named ft/footer
+  git checkout -b ft/footer
+
+  # Add some changes to the branch and commit them
+  git add .
+  git commit -m "First footer changes"
+
+  # Add more changes again to the branch and create a second commit
+  git add .
+  git commit -m "Second footer changes"
+
+  # Push and create a new PR for the branch
+  git push origin ft/footer
+
+  # Checkout the main branch again
+  git checkout main
+
+  # From there, create a new branch named ft/squashing
+  git checkout -b ft/squashing
+
+  # Using git merge squash, squash the changes on the ft/footer branch
+  git merge --squash ft/footer
+
+  # Commit the changes with a different commit message
+  git commit -m "message"
+
+  # Push the changes and create a PR
+  git push origin ft/squashing
+
+  ```
